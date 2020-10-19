@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SignIn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <form id="SignIn-form">
+            <span class="material-icons">
+                person
+                </span>
+            <p id="first-name" class="fields">
+                <label>First Name:  </label>
+                <input type="text" name="firstname" placeholder="">
+            </p>
+            <p class="fields">
+                <label>Last Name:   </label>
+                <input type="text" name="lastname" placeholder="">
+            </p>
+            <p id="middle-name" class="fields">
+                <label>Password: </label>
+                <input type="password" name="password" placeholder="">
+            </p>
+            
+            <p class="fields">
+                <label>Age: </label>
+                <input type="number" name="age" placeholder="">
+            </p>
+            
+            <p class="fields">
+                <label>Gender: </label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                 <input type="radio" name="gender" id="other" value="other">
+                <label for="male">Other</label>
+            </p>
+            
+            <p class="fields">
+                <label>Email Id: </label>
+                <input type="email" name="email" placeholder="">
+            </p>
+
+            <button class="btn">Sign Up!</button>
+            
+            
+
+        </form>
+    </div>
+</body>
+</html>

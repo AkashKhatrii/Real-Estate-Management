@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:white;
+    
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container{
+    width:500px;
+    height: 600px;
+    background-color: #F0F0F0;
+ padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 3px 3px 2px #202020;
+    /*border: 1px solid black;*/
+    /*border-radius: 20px;*/
+}
+
+
+#SignIn-form span{
+    display: block;
+    text-align: center;
+    /*margin:10px auto;*/
+    font-size: 50px;
+    
+    
+    color:black;
+}
+
+.fields{
+    margin:10px;
+    width: 100%;
+    padding: 10px;
+
+}
+.fields label{
+    font-size: 1.3em;
+    color: black;
+}
+.fields input{
+    border: none;
+    margin-left: 10px;
+    background-color: transparent;
+    outline: none;
+    text-align: center;
+    font-size: 1.1em;
+   
+}
+.fields input:hover{
+    border-bottom: 1px solid black;
+}
+
+.btn{
+    font-size: 1.1em;
+    padding: 10px 50px;
+    border-radius: 20px;
+    background-color:black;
+    color: #E0E0E0;
+     display: block;
+     border: 2px solid #E0E0E0;
+    margin: 20px auto;
+    transition: all ease 0.5s;
+}
+.btn:hover{
+    color: black;
+    background-color: #E0E0E0;
+    border: 2px solid black;
+    cursor: pointer;
+
+}

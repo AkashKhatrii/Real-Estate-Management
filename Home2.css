@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #fafafa;
+}
+
+.parent-navbar {
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 95%;
+  margin: 0 auto;
+  /*border:1px solid red;*/
+}
+
+#left-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  
+}
+/*#left-nav ul li {
+  padding: 5px 10px;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  
+  transition: all 1s ease;
+  font-family: 'Noto Sans JP', sans-serif;
+  border-radius: 10px;
+}*/
+#left-nav ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px 0;
+  margin: 0 20px;
+  font-size: 1.2rem;
+  
+  transition: all 1s ease;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+#left-nav ul li a:hover {
+ /* background-color:  rgb(119, 115, 115);*/
+ 
+ border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+
+#right-nav ul {
+  list-style: none;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-around;
+  
+}
+#right-nav ul li a{
+ 
+  text-decoration: none;
+  color: black;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2rem;
+  transition: all 1s ease;
+}
+#help{
+  padding: 0px 15px 11px;
+  margin-right: 5px;
+}
+.material-icons{
+  padding: 2px 7px 0px;
+  color: black;
+  border-radius: 50%;
+}
+#right-nav ul li a:hover {
+  
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+}
+#image{
+  width: 95%;
+  margin: 0 auto;
+  background-image: url("img7.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+ background-size:cover;
+ 
+}
+.search {
+  height: 90vh;
+display: flex;
+justify-content: center;
+align-items: center;
+visibility: visible;
+}
+
+.search input{
+  width:23rem;
+  height: 3.75rem;
+  font-family: 'Noto Sans JP', sans-serif;
+font-size: 1.3rem;
+padding: 0.6rem;
+}
+.search button{
+  width: 6rem;
+  height: 3.75rem;
+  font-size: 1.4rem;
+  color: white;
+  outline: none;
+  border: none;
+  text-align: center;
+  background-color:gray;
+}
+.search button:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+/*.search {
+  background-image: url("img7.jpg");
+  background-size: 100% 100%;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+image:hover{
+  filter: blur(10);
+  -webkit-filter: blur(10);
+}
+
+.input-class input{
+  width:400px;
+  height:60px;
+  margin-top: 20px;
+  padding:10px;
+  outline: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.3rem;
+
+}
+.input-class{
+  position: relative;
+}
+.input-class a{
+  display: inline-block;
+  width: 100px;
+  height: 60px;
+  font-size: 2rem;
+  padding: 10px 5px;
+  color: white;
+  background-color:gray;
+  position: absolute;
+  top: 20px;
+  right: -99px;
+  text-decoration: none;
+  
+}
+.input-class a:hover{
+  color:gray;
+  background-color: black;
+  
+}
+/*#shocase{
+  width: 95%;
+  margin: 0 auto;
+}*/
+#showcase{
+  
+  width: 95%;
+  margin: 50px auto;
+}
+.showcase-container{
+  
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 30px;
+}
+
+.showcase-img{
+  width: 100%;
+}
+.showcase-img img{
+  width: 100%;
+  
+}
+
+#showcase-content{
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  /*align-items: center;*/
+}
+#showcase-content h2{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2rem;
+  color: #736e6e;
+  text-align: left;
+ margin-bottom: 20px;
+}
+
+#showcase-content p{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.3rem;
+  text-align: left;
+}
+/*#showcase-btn-container{
+  margin-top: 15px;
+}*/
+.btn{
+  
+  width:130px;
+  height:50px;
+  margin-top: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  transition: all ease-in 0.2s;
+}
+.btn:hover{
+  box-shadow: 1px 1px 3px grey;
+}
+.showcase-btn1{
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+.showcase-btn2{
+  color:white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+/* Cards */
+
+#cards{
+  width: 95%;
+  margin: 0 auto 50px;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 60px;
+}
+.card{
+  /*border: 1px solid black;*/
+  padding: 15px;
+  /*border-radius: 20px;*/
+  background-color: #F0F0F0;
+}
+.card-img{
+  width: 100%;
+
+  height: 300px;
+
+}
+.card-img img{
+  width: 100%;
+}
+.card-content{
+  width: 100%;
+}
+.card-content a{
+  text-decoration: none;
+  
+  color: black;
+}
+.card-content h2{
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10px;
+  margin-bottom: 20px 0;
+}
+
+
+.card-content p{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*footer*/
+#footer{
+  width: 95%;
+  margin: 0 auto 50px;
+  background-color: #F0F0F0; 
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3.75rem;
+}
+.footer-box{
+  padding: 15px;
+ 
+}
+.footer-box h3{
+  
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+#footer-box1 p{
+  font-size: 1.2rem;
+  
+
+}
+#footer-box2 ul{
+  
+  margin: 0 auto;
+}
+#footer-box2 ul li{
+  font-size: 1rem;
+  
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 5px 10px;
+}
+#footer-box2 ul li a{
+  text-decoration: none;
+  color: black;
+}
+#footer-box3{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#footer-box3 input{
+padding: 10px 10px;
+margin: 10px;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 1.1rem;
+outline: none;
+}
+#footer-box3 textarea{
+  padding: 10px 10px;
+margin: 10px;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 1.1rem;
+outline: none;
+}
+#footer-box3 button{
+  display: block;
+  margin: 10px auto 10px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+
+@media only screen and (max-width:850px){
+  html{
+    font-size: 10px;
+  }
+  .cards-container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 3;
+    gap: 3.75rempx;
+  }
+  #footer{
+    width: 95%;
+    margin: 0 auto 50px;
+    background-color: #F0F0F0; 
+  }
+  #footer-box2 ul{
+    list-style: none;
+  }
+  .footer-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+    gap: 2rem;
+  }
+}
+
